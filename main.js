@@ -37,7 +37,4 @@ function lagerListe() {
 
 }
 
-//Firas
-
-
 // emilio 
