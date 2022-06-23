@@ -56,4 +56,6 @@ function titelSuchen(Titel) {
         }
     }
 }
+function nachbestellen(Titel, Anzahl) {
 
+}
