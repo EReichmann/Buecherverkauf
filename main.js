@@ -1,6 +1,7 @@
 class buecher{
 
-    constructor(Seiten, Autor, Art, Exemplare) {
+    constructor(Titel, Seiten, Autor, Art, Exemplare) {
+       this.Titel = Titel
         this.Seitenanzahl = Seiten
         this.Autor = Autor
         this.Bund = Art
@@ -22,10 +23,10 @@ class buecher{
 let lager = []
 
 function init() {
-    let TributeVonPanem = new buecher("356", "Susanne Collins", "gedbunden", "16")
-    let HerrDerRinge1 = new buecher("1658", "Tolkin", "taschenbuch", "56")
-    let HarryPotter = new buecher("795", "J. K. Rowling", "gebunden", "45")
-    let HarryPotter6 = new buecher("786", "J. K. rowling", "digital","564" )
+    let TributeVonPanem = new buecher("TributeVonPanem", "356", "Susanne Collins", "gedbunden", "16")
+    let HerrDerRinge1 = new buecher("HerrDerRinge1", "1658", "Tolkin", "taschenbuch", "56")
+    let HarryPotter = new buecher("HarryPotter","795", "J. K. Rowling", "gebunden", "45")
+    let HarryPotter6 = new buecher("HarryPotter6","786", "J. K. rowling", "digital","564" )
 
     lager.push(TributeVonPanem, HerrDerRinge1, HarryPotter, HarryPotter6)
 }
@@ -37,8 +38,22 @@ function lagerListe() {
 
 }
 
-//Firas
+function lagerListeTitel(){
+    for (let i = 0; i < lager.length; i++) {
+        console.log(lager[i].Titel)
+        console.log(lager[i].Autor)
+    }
+}
 
-//Enrico
+function titelSuchen(Titel) {
+    for (let i = 0; i < lager.length; i++) {
+        if(Titel === lager[i].Titel)
+        {
+        console.log(lager[i].Anzahl)
+        }
+       else{
+           console.log("Das Buch haben wir leider nciht")
+        }
+    }
+}
 
-// emilio
