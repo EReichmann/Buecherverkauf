@@ -57,3 +57,15 @@ function titelSuchen(Titel) {
     }
 }
 
+function ausDemSortiment(buchtitel) {
+    for (let i = 0; i < lager.length; i++) {
+        if(buchtitel === lager[i].Titel){
+            lager.slice(i)
+        }else{
+            console.log("Wir haben dieses Buch nicht und können es somit nicht löschen")
+        }
+    }
+
+
+}
+
