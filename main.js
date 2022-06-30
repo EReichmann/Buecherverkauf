@@ -1,11 +1,13 @@
 class buecher{
 
-    constructor(Titel, Seiten, Autor, Art, Exemplare) {
+    constructor(Titel, Seiten, Autor, Art, Exemplare, preis, originalpreis) {
        this.Titel = Titel
         this.Seitenanzahl = Seiten
         this.Autor = Autor
         this.Bund = Art
         this.Anzahl = Exemplare
+        this.preis = preis
+        this.originalpreis = originalpreis
     }
 
     verfuegbar(){
@@ -22,11 +24,13 @@ class buecher{
 
 let lager = []
 
+let barkasse = 500
+
 function init() {
-    let TributeVonPanem = new buecher("TributeVonPanem", "356", "Susanne Collins", "gedbunden", "16")
-    let HerrDerRinge1 = new buecher("HerrDerRinge1", "1658", "Tolkin", "taschenbuch", "56")
-    let HarryPotter = new buecher("HarryPotter","795", "J. K. Rowling", "gebunden", "45")
-    let HarryPotter6 = new buecher("HarryPotter6","786", "J. K. rowling", "digital","564" )
+    let TributeVonPanem = new buecher("TributeVonPanem", "356", "Susanne Collins", "gedbunden", "16", 20, 40)
+    let HerrDerRinge1 = new buecher("HerrDerRinge1", "1658", "Tolkin", "taschenbuch", "56", 30, 90)
+    let HarryPotter = new buecher("HarryPotter","795", "J. K. Rowling", "gebunden", "45", 20 , 45)
+    let HarryPotter6 = new buecher("HarryPotter6","786", "J. K. rowling", "digital","564", 40, 500)
 
     lager.push(TributeVonPanem, HerrDerRinge1, HarryPotter, HarryPotter6)
 }
@@ -72,4 +76,6 @@ function ausDemSortiment(buchtitel) {
 
 
 }
-
+function verkaufen(titel, anzahl) {
+    
+}
