@@ -56,6 +56,10 @@ function titelSuchen(Titel) {
         }
     }
 }
+function nachbestellen(Titel, Anzahl) {
+
+}
+
 
 function ausDemSortiment(buchtitel) {
     for (let i = 0; i < lager.length; i++) {
