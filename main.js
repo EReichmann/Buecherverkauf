@@ -57,12 +57,19 @@ function titelSuchen(Titel) {
         }
        else{
            console.log("Das Buch haben wir leider nciht")
+
+
         }
     }
 }
 function nachbestellen(Titel, Anzahl) {
+    let anzahlerhoehen // Nutzer gibt buchname (this.titel) ein - "anzahlerhoehen" soll die eingabe von dem Nutzer sein (Bsp. 1,2,3 usw.)
+    for (let i = this.Anzahl [this.title]; i= anzahlerhoehen + this.Anzahl; i++) {
+        console.log(i)
+    }
 
 }
+// erstelle eine Funktion nachbestellen (titel ,Anzahl) / die funktion soll den "bestand" des elements in lager mit dem "titel" um "anzahl" erhöhen
 
 
 function ausDemSortiment(buchtitel) {
