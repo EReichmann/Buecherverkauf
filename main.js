@@ -76,6 +76,17 @@ function ausDemSortiment(buchtitel) {
 
 
 }
-function verkaufen(titel, anzahl) {
-    
+
+let buybook
+
+function verkaufen(Titel, Anzahl) {
+document.getElementById("titelbuch").value = Titel
+    document.getElementById("anzahlbuch").value = Anzahl
+    for (let i = 0; i < lager.length; i++) {
+        if(Titel === lager[i].Titel){
+            lager.Titel.slice(i)
+            barkasse = barkasse + lager[i].preis
+        }else{
+            console.log("Wir haben dieses Buch nicht somit kannst du es icht kaufen")
+        }
 }
